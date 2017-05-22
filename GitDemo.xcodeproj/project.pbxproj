@@ -105,10 +105,6 @@
 				F05E4BAE1ED2CC7D003BE0C4 /* AppDelegate.m */,
 				F05E4BB01ED2CC7D003BE0C4 /* ViewController.h */,
 				F05E4BB11ED2CC7D003BE0C4 /* ViewController.m */,
-				F05E4BB31ED2CC7D003BE0C4 /* Main.storyboard */,
-				F05E4BB61ED2CC7D003BE0C4 /* Assets.xcassets */,
-				F05E4BB81ED2CC7D003BE0C4 /* LaunchScreen.storyboard */,
-				F05E4BBB1ED2CC7D003BE0C4 /* Info.plist */,
 				F05E4BAA1ED2CC7D003BE0C4 /* Supporting Files */,
 			);
 			path = GitDemo;
@@ -117,6 +113,10 @@
 		F05E4BAA1ED2CC7D003BE0C4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F05E4BB31ED2CC7D003BE0C4 /* Main.storyboard */,
+				F05E4BB61ED2CC7D003BE0C4 /* Assets.xcassets */,
+				F05E4BB81ED2CC7D003BE0C4 /* LaunchScreen.storyboard */,
+				F05E4BBB1ED2CC7D003BE0C4 /* Info.plist */,
 				F05E4BAB1ED2CC7D003BE0C4 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -414,6 +414,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = liuxs.GitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,6 +426,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = liuxs.GitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +498,7 @@
 				F05E4BD61ED2CC7D003BE0C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F05E4BD71ED2CC7D003BE0C4 /* Build configuration list for PBXNativeTarget "GitDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +507,7 @@
 				F05E4BD91ED2CC7D003BE0C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F05E4BDA1ED2CC7D003BE0C4 /* Build configuration list for PBXNativeTarget "GitDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +516,7 @@
 				F05E4BDC1ED2CC7D003BE0C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
