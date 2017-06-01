@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		227DC529563D2DF5E34A2E11 /* libPods-GitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6212831F387B68D357D948B9 /* libPods-GitDemo.a */; };
 		F05E4BAC1ED2CC7D003BE0C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F05E4BAB1ED2CC7D003BE0C4 /* main.m */; };
 		F05E4BAF1ED2CC7D003BE0C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F05E4BAE1ED2CC7D003BE0C4 /* AppDelegate.m */; };
 		F05E4BB21ED2CC7D003BE0C4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F05E4BB11ED2CC7D003BE0C4 /* ViewController.m */; };
@@ -35,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6212831F387B68D357D948B9 /* libPods-GitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FC7CA97D2FAAE4C5629970B /* Pods-GitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitDemo/Pods-GitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B8824494A03C71BA2D38258A /* Pods-GitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GitDemo/Pods-GitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F05E4BA71ED2CC7D003BE0C4 /* GitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F05E4BAB1ED2CC7D003BE0C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F05E4BAD1ED2CC7D003BE0C4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				227DC529563D2DF5E34A2E11 /* libPods-GitDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +87,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3914EA8004419CC1C1965DB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6212831F387B68D357D948B9 /* libPods-GitDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A8ECD10019D69DD133367D5D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8824494A03C71BA2D38258A /* Pods-GitDemo.debug.xcconfig */,
+				6FC7CA97D2FAAE4C5629970B /* Pods-GitDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F05E4B9E1ED2CC7D003BE0C4 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +111,8 @@
 				F05E4BC31ED2CC7D003BE0C4 /* GitDemoTests */,
 				F05E4BCE1ED2CC7D003BE0C4 /* GitDemoUITests */,
 				F05E4BA81ED2CC7D003BE0C4 /* Products */,
+				A8ECD10019D69DD133367D5D /* Pods */,
+				3914EA8004419CC1C1965DB6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -283,9 +307,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F05E4BD41ED2CC7D003BE0C4 /* Build configuration list for PBXNativeTarget "GitDemo" */;
 			buildPhases = (
+				074A2A6E24801E9A035DFD88 /* [CP] Check Pods Manifest.lock */,
 				F05E4BA31ED2CC7D003BE0C4 /* Sources */,
 				F05E4BA41ED2CC7D003BE0C4 /* Frameworks */,
 				F05E4BA51ED2CC7D003BE0C4 /* Resources */,
+				F524D9E61EE4C6500357627E /* [CP] Embed Pods Frameworks */,
+				5F78A3A53EC9417029CE8842 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -400,6 +427,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		074A2A6E24801E9A035DFD88 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5F78A3A53EC9417029CE8842 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GitDemo/Pods-GitDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F524D9E61EE4C6500357627E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GitDemo/Pods-GitDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F05E4BA31ED2CC7D003BE0C4 /* Sources */ = {
@@ -547,6 +622,7 @@
 		};
 		F05E4BD51ED2CC7D003BE0C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8824494A03C71BA2D38258A /* Pods-GitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -561,6 +637,7 @@
 		};
 		F05E4BD61ED2CC7D003BE0C4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FC7CA97D2FAAE4C5629970B /* Pods-GitDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
