@@ -11,7 +11,7 @@ pod 'MBProgressHUD', '~> 1.0'
 pod 'Masonry', '~> 1.0'
 pod 'MJRefresh', '~>3.0.0'
 pod 'MJExtension', '~> 3.0'
-
+pod 'YYKit', '~> 1.0'
 
 
 # 【指定某一个target所使用的库】

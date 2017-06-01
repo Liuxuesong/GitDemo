@@ -16,6 +16,8 @@
 		F05E4BBA1ED2CC7D003BE0C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F05E4BB81ED2CC7D003BE0C4 /* LaunchScreen.storyboard */; };
 		F05E4BC51ED2CC7D003BE0C4 /* GitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F05E4BC41ED2CC7D003BE0C4 /* GitDemoTests.m */; };
 		F05E4BD01ED2CC7D003BE0C4 /* GitDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F05E4BCF1ED2CC7D003BE0C4 /* GitDemoUITests.m */; };
+		F0E80FE41EE033A100ECEF4D /* NetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E80FE31EE033A100ECEF4D /* NetworkHelper.m */; };
+		F0E80FE71EE0383100ECEF4D /* NetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E80FE61EE0383100ECEF4D /* NetworkCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,10 @@
 		F05E4BEC1ED2DE0E003BE0C4 /* DefineMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineMacro.h; sourceTree = "<group>"; };
 		F05E4BED1ED2DEBA003BE0C4 /* DefineTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineTheme.h; sourceTree = "<group>"; };
 		F05E4BEE1ED2DECD003BE0C4 /* DefineRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineRequest.h; sourceTree = "<group>"; };
+		F0E80FE21EE033A100ECEF4D /* NetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkHelper.h; sourceTree = "<group>"; };
+		F0E80FE31EE033A100ECEF4D /* NetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkHelper.m; sourceTree = "<group>"; };
+		F0E80FE51EE0383100ECEF4D /* NetworkCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkCache.h; sourceTree = "<group>"; };
+		F0E80FE61EE0383100ECEF4D /* NetworkCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkCache.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +230,10 @@
 		F05E4BE21ED2DA00003BE0C4 /* NewWork */ = {
 			isa = PBXGroup;
 			children = (
+				F0E80FE21EE033A100ECEF4D /* NetworkHelper.h */,
+				F0E80FE31EE033A100ECEF4D /* NetworkHelper.m */,
+				F0E80FE51EE0383100ECEF4D /* NetworkCache.h */,
+				F0E80FE61EE0383100ECEF4D /* NetworkCache.m */,
 			);
 			path = NewWork;
 			sourceTree = "<group>";
@@ -481,7 +491,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0E80FE41EE033A100ECEF4D /* NetworkHelper.m in Sources */,
 				F05E4BB21ED2CC7D003BE0C4 /* ViewController.m in Sources */,
+				F0E80FE71EE0383100ECEF4D /* NetworkCache.m in Sources */,
 				F05E4BAF1ED2CC7D003BE0C4 /* AppDelegate.m in Sources */,
 				F05E4BAC1ED2CC7D003BE0C4 /* main.m in Sources */,
 			);
