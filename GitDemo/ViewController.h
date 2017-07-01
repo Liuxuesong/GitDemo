@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+typedef double(^sum)(NSString *,...);
 @interface ViewController : UIViewController
 
-
+@property (nonatomic, copy) sum sumBlock;
 @end
 

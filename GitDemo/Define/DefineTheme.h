@@ -19,8 +19,14 @@
 #define MAIN_GROUNDCOLOR UIColorFromRGB(0xF98B1B)//主题景色
 #define BACKGROUNDCOLOR UIColorFromRGB(0xF7F7F7)//背景颜色
 //字体大小
-#define TITLEFONT [UIFont systemFontOfSize:18]
-#define TEXTFONT [UIFont systemFontOfSize:16]
-#define TIPTEXTFONT [UIFont systemFontOfSize:12]
+#define TITLE_FONT [UIFont systemFontOfSize:18]
+#define TEXT_FONT [UIFont systemFontOfSize:16]
+#define TIP_TEXT_FONT [UIFont systemFontOfSize:12]
+
+#define  APPBasicColor [UIColor colorWithRed:0 green:194/255.0 blue:192/255.0 alpha:1.0]
+#define  ChartBasicColor [UIColor colorWithRed:0 green:203/255.0 blue:203/255.0 alpha:1.0]
+#define  ChartDataColor [UIColor colorWithRed:23/255.0 green:222/255.0 blue:223/255.0 alpha:1.0]
+#define  AppGrayColor [UIColor colorWithRed:242/255.0 green:242/255.0 blue:242/255.0 alpha:1.0]
+
 
 #endif /* DefineTheme_h */

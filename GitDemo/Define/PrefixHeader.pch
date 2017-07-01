@@ -20,6 +20,8 @@
 #import "DefineMacro.h"
 #import "DefineTheme.h"
 #import "DefineRequest.h"
+#import "VenderMacros.h"
+#import "NetworkErrorMacros.h"
 
 #import <AFNetworking/AFNetworking.h>
 #import <Masonry/Masonry.h>
@@ -29,6 +31,8 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <YYKit/YYKit.h>
 
+#import "NetworkHelper.h"
+#import "AppDelegate+AppService.h"
 #endif
 // 发布版本的时候 关闭NSLog
 #ifdef __DISTRIBUTION__
@@ -37,12 +41,14 @@
 #define NSLog(...) NSLog(__VA_ARGS__)
 #endif
 
-// RTSS APP 的版本号
+// APP 的版本号
 #define APPLICATION_VERSION_CODE        [[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"] intValue]
 
 #define APPLICATION_VERSION_TEXT        [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
 
 // APP 发布流程宏(有逻辑判断，网络请求)
 #define APPLICATION_BUILDING_RELEASE
+// 在没有网络或省略网络情况下判断是否定义了宏，酌情注释宏定义
+
 
 #endif /* PrefixHeader_pch */
